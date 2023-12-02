@@ -2,11 +2,14 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import imagenDoctor from '../assets/doctor.jpg'
-import {card, image, title, subtitle} from '../Styles/Card.module.css'
+import {card, image, title, darkTheme} from '../Styles/Card.module.css'
+import {grid} from '../Styles/Detail.module.css'
 import  axios  from 'axios'
+import { useAppContext } from '../Context/Global.context'
 
 const Detail = () => {
 
+  const { state } = useAppContext();
   const [doctor, setDoctor] = useState({})
   const { id } = useParams()
   const url = 'https://jsonplaceholder.typicode.com/users/' + id
@@ -19,7 +22,8 @@ const Detail = () => {
   }, []); 
 
   return (
-    <div className={card}>
+    <div className={grid}>
+      <div className={state.theme === 'dark' ? darkTheme:card}>
       <h3>{doctor.name}</h3>
       <img
             src={imagenDoctor}
@@ -31,6 +35,8 @@ const Detail = () => {
       <h3>{doctor.website}</h3>
 
     </div>
+    </div>
+    
   )
 }
 
