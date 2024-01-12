@@ -23,16 +23,21 @@
     background-color: #77d3eb;
     color: white;
     padding: 10px 15px;
-    margin-left:10px;
+    margin:10px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 30%;
   }
   
   .error {
     color: red;
     text-align: center;
     margin-top: 10px;
+  }
+  .datos {
+    color: #77d3eb;
+    
   }
   
   .resultContainer {

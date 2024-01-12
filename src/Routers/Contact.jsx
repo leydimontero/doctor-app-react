@@ -3,14 +3,13 @@ import Form from '../Components/Form'
 
 const Contact = () => {
   return (
-    <div >
-      <h3 style={{ textAlign: 'center' }}>Porfavor ingrese sus datos</h3>
-      <Form/>
-      
-      
-    </div>
     
-  )
+      <div style={{ textAlign: 'center' }}>
+        <h3>Please enter your details</h3>
+        <Form />
+      </div>
+     
+  );
 }
 
 export default Contact
