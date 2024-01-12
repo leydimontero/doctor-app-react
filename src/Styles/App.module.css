@@ -12,6 +12,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* @media screen and (max-width: 600px) {
+  #root {
+    padding: 1rem; 
+  }
+} */
+
 
 .light-theme {
   background-color: #ffffff;
@@ -22,6 +28,4 @@ body {
 .dark-theme {
   background-color: #3a3a3a;
   color: #ffffff;
-  
-  
-}
+  }

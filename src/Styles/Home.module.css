@@ -5,3 +5,8 @@
     gap: 20px;
     padding: 25px 45px;
 }
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    }
+}

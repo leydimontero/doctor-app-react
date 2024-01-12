@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContentNombres}>
-        <h3>Hecho por Leydi y Laura</h3>
+        <h3>Made with magic ✨</h3>
       </div>
 
       <div className={styles.footerContentImagenes}>

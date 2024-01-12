@@ -12,15 +12,27 @@
 
   .footerContentImagenes {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
   }
 
   .footerContentImagenes .logoDigital {
     width: 200px;
+    margin-bottom: 10px;
   }
 
   .footerContentImagenes .iconoSocial {
     margin: 5px;
     width: 30px;
   }
+  
+  @media screen and (max-width: 768px) {
+    .footerContentImagenes .logoDigital {
+        width: 150px; 
+    }
+
+    .footerContentImagenes .iconoSocial {
+        width: 25px; 
+    }
+}
